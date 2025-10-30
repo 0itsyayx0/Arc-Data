@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto ArcData</title>
+    <link rel="stylesheet" href="css/lo_bonito.css">
+    <script defer src="funciones.js"></script>
+</head>
+<body>
+
+    <!-- Logo y Barra -->
+    <div><img class="imagen1" src="img/cropped-cropped-arcangeles-logo.png" alt="logo arcangeles"></div>
+    <nav>
+        <div class="barra">ArcData</div> 
+        <ul class="links">
+            <li class="link"><a href="#">Semestre </a>
+                <ul class="vertical">
+                    <li class="link"><a href="semestre_1.html">Semestre 1</a></li>
+                    <li class="link"><a href="https://colab.research.google.com/drive/1b3piZDsFuu-0Ge0bj3qQlGyi1vE9ocy8?usp=sharing">Semestre 2</a></li>
+                    <li class="link"><a href="semestre_1.html">Semestre 3</a></li>
+                    <li class="link"><a href="semestre_1.html">Semestre 4</a></li>
+                    <li class="link"><a href="semestre_1.html">Semestre 5</a></li>
+                </ul>
+            </li>
+            <li class="link"><a href="#" id="btn-quienes">Quienes somos</a></li>
+            <li class="link"><a href="#">Nuestra visión</a></li>
+        </ul>  
+    </nav>
+
+    <!-- Página principal -->
+    <main id="main-section">
+        <section class="principal">
+            <div class="imagenes-lado">
+                <div class="fila-superior">
+                    <img class="arca2" src="img/arca2.jpg" alt="imagen arca2">
+                    <img class="arca3" src="img/arca3.jpg" alt="imagen arca3">
+                </div>
+                <div class="fila-inferior">
+                    <img class="arca1" src="img/arca1.jpg" alt="imagen arca1">
+                </div>
+            </div>
+
+            <div class="objetivos-lado">
+                <h1 class="Objetivos">Objetivos</h1>
+                <div class="objetivo-bloque">
+                    <h2 class="tit">Objetivo General</h2>
+                    <p class="los-objetivos">
+                        Desarrollar e implementar un software web direccionado a la fundación Arcángeles organizacional de fácil acceso, intuitivo para el agendamiento de citas y seguimiento a los pacientes.
+                    </p>
+                </div>
+                <div class="objetivo-bloque">
+                    <h2 class="tit">Objetivos Específicos</h2>
+                    <ul>
+                        <li class="los-objetivos">Mejorar los procesos de seguimiento de citas médicas dentro de la IPS.</li>
+                        <li class="los-objetivos">Implementar mediante el sistema la óptima organización administrativa de la IPS.</li>
+                        <li class="los-objetivos">Facilitar el agendamiento de citas médicas.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="tecnologia">
+            <h3>Tecnologías</h3>
+            <p class="t_tecnologias">
+                Tecnologías que hemos usado: Bases de datos, programación básica, consultas SQL y modelado entidad-relación. Este conocimiento nos permite construir soluciones robustas y adaptadas a las necesidades de la IPS.
+            </p>
+        </section>
+    </main>
+
+    <!-- Sección "Quiénes somos" -->
+    <section id="quienes-somos-section" style="display: none;">
+        <div class="quienes-container">
+            <div class="video-texto">
+                <div class="video-columna">
+                    <video class="video" controls>
+                        <source src="img/pitch proyecto.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="texto-columna">
+                    <h1 class="titulo-quienes">Proyecto ArcData</h1>
+                    <p class="texto-quienes">
+                        Somos un equipo dedicado a transformar la atención médica. Nuestro aplicativo web, diseñado para esta IPS, agiliza la gestión de pacientes y facilita el acceso a información crucial. Con una interfaz intuitiva y herramientas personalizables, estamos seguros de que mejorará la calidad de nuestros servicios.
+                    </p>
+                    <button id="btn-regresar" class="btn-regresar">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <div><h3 class="final">Información de contacto</h3></div>
+            <li class="foo">Dirección: Ubicación física de la fundación.</li>
+            <li class="foo">Teléfono: Contacto directo.</li>
+            <li class="foo">Correo electrónico: Medio adicional de comunicación.</li>
+            <li class="foo">Redes sociales: Conecta con la comunidad.</li>
+        </ul> 
+        <ul>
+            <div><h3 class="final">Enlaces útiles</h3></div>
+            <li class="foo">Acerca de la fundación: Misión, visión y valores.</li>
+            <li class="foo">Proyectos y programas.</li>
+            <li class="foo">Historia y logros.</li>
+            <li class="foo">Política de privacidad y términos de uso.</li>
+        </ul>    
+        <ul>
+            <div><h3 class="final">Llamado a la acción (CTA)</h3></div> 
+            <li class="foo">Donaciones y voluntariado.</li>
+        </ul>  
+        <!-- Menú lateral de semestres -->
+<div id="menu-semestre" class="menu-semestre">
+    <h3 class="titulo-semestre">Semestres</h3>
+    <ul class="lista-semestres">
+        <li><a href="semestre_1.html">Semestre 1</a></li>
+        <li><a href="https://colab.research.google.com/drive/1b3piZDsFuu-0Ge0bj3qQlGyi1vE9ocy8?usp=sharing">Semestre 2</a></li>
+        <li><a href="semestre_1.html">Semestre 3</a></li>
+        <li><a href="semestre_1.html">Semestre 4</a></li>
+        <li><a href="semestre_1.html">Semestre 5</a></li>
+    </ul>
+</div>
+
+    </footer>
+
+    <!-- Script -->
+    <script>
+        document.getElementById("btn-quienes").addEventListener("click", function(e){
+            e.preventDefault();
+            document.getElementById("main-section").style.display = "none";
+            document.getElementById("quienes-somos-section").style.display = "block";
+        });
+        document.getElementById("btn-regresar").addEventListener("click", function(){
+            document.getElementById("quienes-somos-section").style.display = "none";
+            document.getElementById("main-section").style.display = "block";
+        });
+    </script>
+
+<script>
+    const btnSemestre = document.querySelector('.link > a[href="#"]');
+    const menuSemestre = document.getElementById('menu-semestre');
+
+    btnSemestre.addEventListener('click', function(e) {
+        e.preventDefault();
+        menuSemestre.classList.toggle('active');
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!menuSemestre.contains(e.target) && !btnSemestre.contains(e.target)) {
+            menuSemestre.classList.remove('active');
+        }
+    });
+</script>
+
+</body>
+</html>
+
+
